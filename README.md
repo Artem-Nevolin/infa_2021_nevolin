@@ -1,1 +1,2 @@
-# infa_2021_nevolin
+git config user.name "Nevolin Artem"
+git config user.email avnevolin@mail.ru
