@@ -4,18 +4,22 @@ from pygame.draw import *
 pygame.init()
 
 FPS = 30
-screen = pygame.display.set_mode((400, 400))
+screen = pygame.display.set_mode((600, 800))
+# background
+rect(screen, (255, 255, 255), (0, 0, 600, 800))
+rect(screen, (205, 205, 205), (0, 0, 600, 500))
+rect(screen, (48, 95, 56), (0, 505, 600, 800))
+# rectangle
+rect(screen, (165, 165, 165), (10, 15, 120, 510))
+rect(screen, (165, 165, 165), (150, 35, 120, 510))
+rect(screen, (238, 238, 238), (460, 15, 120, 510))
+rect(screen, (215, 215, 215), (100, 75, 120, 510))
+rect(screen, (66, 127, 76), (400, 95, 120, 510))
 
-x1 = 100; y1 = 100
-x2 = 300; y2 = 200
-N = 10
-color = (255, 255, 255)
-rect(screen, color, (x1, y1, x2 - x1, y2 - y1), 2)
-h = (x2 - x1) // (N + 1)
-x = x1 + h
-for i in range(N):
-    line(screen, color, (x, y1), (x, y2))
-    x += h
+
+
+
+
 
 pygame.display.update()
 clock = pygame.time.Clock()
